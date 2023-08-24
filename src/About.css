@@ -1,0 +1,73 @@
+
+
+*{
+    font-family: "Reem Kufi", sans-serif !important;
+    margin: 0;
+    padding: 0;
+    box-sizing : border-box;
+    
+}
+
+/* About.css */
+
+.about {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+   animation: fadeInAnimation 1s ease-in-out;
+  /* Center-align text */
+}
+.skills,
+.experience {
+  margin-top: 40px; /* Add margin to push it lower */
+  margin-bottom: 20px;
+  width: 100%; /* Make the section take full width */
+}
+.skills h2,
+.experience h2,
+.education h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: left; /* Left-align text */
+}
+.skills-item,
+.experience-item,
+.education-item {
+  margin-bottom: 20px;
+  border-left: 3px solid rgb(214, 119, 210);
+  padding-left: 15px;
+  text-align: left; /* Left-align text */
+}
+.skills-item h3,
+.experience-item h3,
+.education-item h3 {
+  font-size: 18px;
+  margin: 0;
+}
+.skills-item p,
+.experience-item p,
+.education-item p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.experience-item .skills,
+.education-item .skills {
+  font-size: 14px;
+  color: #777;
+  margin-top: 10px;
+}
+
+.education-item p:last-child {
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+/* Your existing styles... */

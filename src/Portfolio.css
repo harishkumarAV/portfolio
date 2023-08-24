@@ -1,0 +1,99 @@
+.portfolio {
+    padding: 20px;
+  }
+  
+  .project-list {
+    display: grid;
+    grid-gap: 20px;
+  }
+  
+  .project-item {
+    background-color: #a2a0a0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-item h2 {
+    margin-bottom: 10px;
+  }
+  
+  .duration {
+    color: #494949;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  
+  .skill {
+    background-color: #494949;
+    color: #b9b7b7;
+    font-size: 12px;
+    padding: 5px 10px;
+    margin: 3px;
+    border-radius: 4px;
+  }
+  /* Portfolio.css */
+
+/* ... Your existing styles ... */
+/* Portfolio.css */
+
+/* Your existing styles... */
+
+.project-item,
+.open-portfolio-button {
+  opacity: 0;
+  animation: fadeInAnimation 1s ease-in-out forwards;
+}
+
+.project-item:nth-child(2),
+.open-portfolio-button:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.project-item:nth-child(3), /* Apply animation delay and duration for the third project */
+.open-portfolio-button:nth-child(4) { /* Apply animation delay for the button */
+  animation-delay: 2s; /* Delay the start of the animation */
+  animation-duration: 2s; /* Adjust animation duration for the third project */
+}
+
+.project-item:nth-child(4), /* Apply animation delay and duration for the fourth project */
+.open-portfolio-button:nth-child(5) { /* Apply animation delay for the button */
+  animation-delay: 3s; /* Delay the start of the animation */
+  animation-duration: 3s; /* Adjust animation duration for the fourth project */
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Your existing styles... */
+
+.open-portfolio-button {
+    background-color: rgb(214, 119, 210);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .open-portfolio-button:hover {
+    background-color: rgb(161, 65, 142);
+  }
+  
+  

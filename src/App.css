@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+
+
+*{
+    font-family: "Reem Kufi", sans-serif !important;
+    margin: 0;
+    padding: 0;
+    box-sizing : border-box;
+    
+}
+body{
+    background: rgb(0, 0, 0);
+    background-image: url("H:/nivi songs/prjct 1.4croped.jpg") ;
+    background-size: cover; 
+    color: aliceblue;
+}
+.header{
+    position: fixed;
+    background-image: url("H:/nivi songs/prjct 1.4croped.jpg") ;
+    background-size: cover; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    word-spacing: 5px;
+    font-size: 25px;
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar a {
+    font-size: 20px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 115px;
+    transition: .3s;
+}
+.navbar a:hover {
+    color: rgb(214, 119, 210);
+}
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+.home-content{
+    max-width: 600px;
+    word-spacing: 3px;
+    
+}
+.home-content h1{
+    font-size: 40px;
+    word-spacing: 5px;
+    
+}
+.home-content h3{
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(214, 119, 210);
+}
+.home-content p{
+    font-size: 18px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-box a{
+    
+    line-height: 1.8;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 100%;
+    background: rgb(214, 119, 210);
+    border: 2px solid rgb(214, 119, 210);
+    border-radius: 8px;   
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
 }
